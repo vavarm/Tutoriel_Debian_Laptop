@@ -90,30 +90,30 @@ Vous accédez alors à l'interface d'installation de Debian.
 - Sélectionnez `Advanced options …`
 - Sélectionnez `… Expert install`
 
-### 1. Menu `Choose language`
+### 1. Menu: Choose language
 
 - sélectionez **French**
 - sélectionez **France**
 - sélectionez **France**
 - sélectionez **Continuer**
 
-### 2. Menu `Configurer le clavier`
+### 2. Menu: Configurer le clavier
 
 - sélectionez **Français**
 
-### 3. Menu `Détection et montage du support d’installation`
+### 3. Menu: Détection et montage du support d’installation
 
 - sélectionez **Continuer**
 
-### 4. Menu `Charger des composants depuis le support d’installation`
+### 4. Menu: Charger des composants depuis le support d’installation
 
 - sélectionez **Continuer**
 
-### 5. Menu `Détecter le matériel réseau`
+### 5. Menu: Détecter le matériel réseau
 
 - sélectionez **Continuer**
 
-### 6. Menu `Configurer le réseau`
+### 6. Menu: Configurer le réseau
 
 - sélectionez **Continuer**
 - l'interface ethernet (pas la `wireless`qui, si vous l'avez, correspond à la carte wifi de votre ordinateur)
@@ -122,7 +122,7 @@ Vous accédez alors à l'interface d'installation de Debian.
 - `Nom de machine` (le nom que portera l'ordinateur dans votre réseau)
 - `Domaine` (laissez ce champ vide)
 
-### 7. Menu `Créer les utilisateurs et choisir les mots de passe`
+### 7. Menu: Créer les utilisateurs et choisir les mots de passe
 
 Dans ce menu, nous allons donner un mot de passe à notre utilisateur root (l'utilisateur administrateur du système) et nous allons créer notre premier utilisateur ordinaire ("test") qui nous permettra de tester notre système et d'accéder à notre utilisateur root.
 
@@ -135,17 +135,17 @@ Dans ce menu, nous allons donner un mot de passe à notre utilisateur root (l'ut
 - saisissez le `Mot de passe de test`: **test**
 - saisissez à nouveau le même mot de passe dans `Confirmation mot de passe de test`
 
-### 8. Menu `Configurer l'horloge`
+### 8. Menu: Configurer l'horloge
 
 - dans `Configurer l’horloge: NTP`? saisissez **Oui**
 - saisissez l'adresse NTP suivante: 0.debian.pool.ntp.org
 - saisissez votre région (**Europe de l’Ouest** si vous êtes en France métropolitaine)
 
-### 9. Menu `Détecter les disques`
+### 9. Menu: Détecter les disques
 
 - **Continuer**
 
-### 10. Menu `Partitionner les disques`
+### 10. Menu: Partitionner les disques
 
 - sélectionner: **Manuel**
 
@@ -212,17 +212,17 @@ C'est cette partition (la plus grande) qui servira à stocker nos données utili
 
 - sélectionnez **Oui**
 
-### 11. Menu `Installer le système de base`
+### 11. Menu: Installer le système de base
 
 - sélectionnez **linux-image-amd64** (si 64 bits, sinon **linux-image-amd32**)
 - sélectionnez **image générique**
 
-### 12. Menu `Configurer l’outil de gestion des paquets`
+### 12. Menu: Configurer l’outil de gestion des paquets
 
 - dans la sélections du miroir, sélectionnez **Non**
 - dans les `Services à utiliser`, décochez toutes les options
 
-### 13. Menu `Choisir et installer des logiciels`
+### 13. Menu: Choisir et installer des logiciels
 
 - sélectionnez **Pas de mises à jour automatiques**
 - dans `popularity-contest`, sélectionnez **Non**
@@ -231,13 +231,13 @@ C'est cette partition (la plus grande) qui servira à stocker nos données utili
 > [!NOTE]
 > Nous installerons l'environnement de bureau plus tard manuellement (sans passer par Tasksel) ce qui nous permettra d'effectuer une installation minimale
 
-### 14. Menu `Installer le programme de démarrage GRUB`
+### 14. Menu: Installer le programme de démarrage GRUB
 
 - dans `Forcer l’installation sur le chemin des supports amovibles EFI`, sélectionnez **Oui** (c'est pour cette fonctionnalité que nous avons créé une partition EFI)
 - dans `Démarrer Debian automatiquement`, sélectionnez **Oui**
 - dans `os-prober`, sélectionnez **Non** (hormis si vous souhaitez faire du multi-boot)
 
-### 15. Menu `Terminer l’installation`
+### 15. Menu: Terminer l’installation
 
 - dans `UTC`, sélctionnez **Oui**
 - retirez le périphérique USB d’installation, puis sélectionnez **Continuer**
@@ -315,7 +315,7 @@ Tout d'abord, installons un environnement Gnome minimal:
 apt install -y gnome-core
 ```
 
-Ensuite, nous allons modifier la configuration réseau du système car celle-ci sera désormais géré par Gnome:
+Ensuite, nous allons modifier la configuration réseau du système car celle-ci sera désormais gérée par Gnome:
 
 - exécutez la commande suivante:
 
@@ -405,7 +405,7 @@ adduser <username>
 ```
 
 > [!TIP]
-> Si vous n'avez pas d'idée de nom d'utilisateur, une convention consiste à le nommer `prénom.nom`
+> Si vous n'avez pas d'idée de nom d'utilisateur, une convention consiste à le nommer `prénom.nom` (exemple: `john.doe`)
 
 Cette commande vous amène à remplir plusieurs attributs:
 
