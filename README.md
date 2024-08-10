@@ -76,7 +76,7 @@ Une fois l'opération terminée, Etcher vous notifiera que votre clé est prête
 
 Vous accédez alors à l'interface d'installation de Debian.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Les commandes permettant de naviguer dans l'interface d'installation sont les suivantes:
 >
 > - Valider: Entrée
@@ -412,6 +412,15 @@ Cette commande vous amène à remplir plusieurs attributs:
 - `Enter new UNIX password`: entrez le mot de passe de l'utilisateur (saisissez un mot de passe fort, il peut être le même que le mot de passe de l'utilisateur `root`)
 - `Retype new UNIX password`: saisissez à nouveau le mot de passe
 - Vous pouvez laisser vide toutes les autres attributs (ils ne servent qu'à donner des métadonées à l'utilisateur)
+
+> [!IMPORTANT]
+> Si vous avez déjà touché à du Linux vous connaissez surement le préfixe `sudo` qui permet de donner les privilèges administrateurs à un utilisateur ordinaire. Si vous suivez ce tutoriel, vous ne verrez jamais ce préfixe. En effet, j'ai décidé de ne pas permettre l'utilisation de ce préfixe. J'ai effectué ce choix pour deux raisons principales:
+>
+> - Un utilisateur ordinaire est un utilisateur qui utilise le système qu'on lui met à disposition. Il peut, s'il le souhaite, se rajouter des logiciels et des fichiers dans son dossier mais il n'est pas là pour ajouter et/ou modifier des logiciels et des configurations sur tout le système (ce que fait APT par exemple)
+> - Donner toutes les permissions administrateurs à un utilisateur lambda (ce que fait le préfixe `sudo`) est vecteur de failles de sécurité (coucou Windows et MacOS qui ne se privent pas de nous accorder ces privilèges administrateurs très/trop facilement). C'est l'une des raisons pour lesquelles vous trouverez peu d'anti-virus sur Linux (vous êtes censés savoir ce que vous faites sur votre système 😉)
+
+> [!NOTE]
+> Si vous souhaitez tout de même permettre l'utilisation de ce préfixe à vos utilisateurs, il vous suffit de les ajouter au groupe `sudo` via la commande `usermod -aG sudo <username>`. Cependant soyez certain que vos utilisateurs disposent d'un mot de passe assez fort car, avec ce préfixe, vos utilisateurs disposent de tous les droits administrateurs.
 
 ## Pour aller plus loin
 
