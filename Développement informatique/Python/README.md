@@ -18,8 +18,8 @@ Si la commande python3 n'est pas trouvée ou que vous obtenez une erreur, cela s
 
 ```bash
 su -l # pour se connecter en tant que root et avoir les permissions pour utiliser APT
-apt-get update # pour obtenir les dernières mises à jour
-apt-get install python3 # pour installer la dernière version stable de python depuis les dépôts APT
+apt update # pour obtenir les dernières mises à jour
+apt install python3 # pour installer la dernière version stable de python depuis les dépôts APT
 exit # pour fermer la connexion root
 ```
 
