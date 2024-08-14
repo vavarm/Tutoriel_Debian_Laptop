@@ -77,7 +77,7 @@ python3 -m pip freeze > requirements.txt
 python3 -m pip install -r requirements.txt
 ```
 
-> [!INFO]
+> [!NOTE]
 > Le fichier requirements.txt doit avoir le format suivant :
 >
 > ```txt
