@@ -1,4 +1,4 @@
-# LLibreWolf : Un Navigateur Web Open Source Centré sur la Confidentialité et la Sécurité
+# LibreWolf : Un Navigateur Web Open Source Centré sur la Confidentialité et la Sécurité
 
 LibreWolf est un fork de Firefox. Par défaut, l'installation de Gnome entraine également l'installation de Firefox ESR (Extended Support Release) qui est la version stable de Firefox.
 
