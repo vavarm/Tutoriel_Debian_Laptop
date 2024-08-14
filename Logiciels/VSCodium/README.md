@@ -16,7 +16,7 @@ exit # pour fermer la connexion root
 ```
 
 > [!NOTE]
-> Une fois installé, vous retrouverez LibreWolf dans votre bibliothèque d'applications.
+> Une fois installé, vous retrouverez VSCodium dans votre bibliothèque d'applications.
 
 > [!TIP]
 > Vous pouvez également lancer VSCodium depuis votre terminal avec la commande `codium` ou `codium <nom_du_fichier>` ou `codium <répertoire_de_travail>`. (Exemple: pour ouvrir VSCodium depuis votre répertoire courant, exécutez `codium .`)
