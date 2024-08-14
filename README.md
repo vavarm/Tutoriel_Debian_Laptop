@@ -351,16 +351,6 @@ Ouvrez le terminal:
 - saisissez `ALT+F2` (maintenez la touche `Fn` en même temps si besoin)
 - saisissez `gnome-terminal` dans le champ `Lancer une commande`
 
-Dans ce terminal, nous allons nous connecter en tant que root:
-
-- exécutez la commande suivante:
-
-```bash
-su -l
-```
-
-- saisissez le mot de passe de l'utilisateur `root`
-
 Les configurations que nous allons modifier sont les suivantes:
 
 - Activer `Verr. Num` au démarrage:
@@ -379,6 +369,16 @@ gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffe
 > Si vous souhaitez ajuster le niveau de zoom des éléments affichés par Gnome et des fenêtres, vous pouvez ouvrir les paramètres (icône engrenage dans le coin en haut à droite), sélectionner l'onglet `Écrans` et changer l'attribut `Échelle`
 
 ## Installation des outils de base
+
+À partir d'ici, nous allons nous connecter en tant que root afin d'exécuter des commandes qui nécessitent des privilèges administrateurs.
+
+- exécutez la commande suivante pour se connecter en tant qu'utilisateur `root`:
+
+```bash
+su -l
+```
+
+- saisissez le mot de passe de l'utilisateur `root`
 
 Quelques outils sont essentiels et vous seront à un moment donné nécessaires:
 
